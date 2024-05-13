@@ -1,16 +1,21 @@
 # food_categories
 
-A new Flutter project.
+https://medium.com/@mahmoudmedhat913/a4418502262f
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+Downloading the project and running it in chrome
+Installing Dart
+Installing packages by writing "fluuter pub get"
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To know more about your food
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributing
+
+Contributor Guidelines
+Code Style/Requirements
+Format for commit messages
+contributor: Mahmoud Medhat Mahmoud
+
