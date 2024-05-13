@@ -4,9 +4,9 @@ https://medium.com/@mahmoudmedhat913/a4418502262f
 
 ## Installation
 
-Downloading the project and running it in chrome
+Downloading the project and running it in Chrome
 Installing Dart
-Installing packages by writing "fluuter pub get"
+Installing packages by writing "flutter pub get"
 
 ## Usage
 
