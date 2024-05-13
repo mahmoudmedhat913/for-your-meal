@@ -6,6 +6,9 @@ import 'package:food_categories/descriptionsweetfood.dart';
 String foodkind = '';
 
 class foodscreen extends StatelessWidget {
+  /* UI page forr varies food */
+
+
   @override
   Widget build(BuildContext context) {
     if (variesfood == 'savorywow') {
@@ -18,8 +21,9 @@ class foodscreen extends StatelessWidget {
             backgroundColor: Colors.yellow,
           ),
           body: SingleChildScrollView(
-              child: Column(children: <Widget>[
-            Row(children: [
+              child: Row(children: <Widget>[
+              const SizedBox(width: 10.0),
+            Column(children: [
               const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
@@ -41,7 +45,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Chicken Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -49,6 +53,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to chicken food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'chicken';
@@ -56,7 +61,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -77,7 +82,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Soup Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -85,6 +90,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to soup food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'soup';
@@ -93,8 +99,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -115,7 +122,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Rice Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -123,6 +130,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to rice food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'rice';
@@ -130,7 +138,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -151,7 +159,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Salad Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -159,6 +167,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to salad food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'salad';
@@ -167,8 +176,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -189,7 +199,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Pasta Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -197,6 +207,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to pasta food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'pasta';
@@ -204,7 +215,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -226,7 +237,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Kebab Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -234,6 +245,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to kebab food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'kebab';
@@ -242,8 +254,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 20.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -264,7 +277,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Mahashi Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -272,6 +285,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to mahashi food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'mahashi';
@@ -279,7 +293,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -300,14 +314,15 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
-                      'Liver Section',
+                    child: const Text(
+                      'Kebda Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
                     ),
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to kibda food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsavoryscreen()));
                   foodkind = 'liver';
@@ -328,9 +343,10 @@ class foodscreen extends StatelessWidget {
             backgroundColor: Colors.yellow,
           ),
           body: SingleChildScrollView(
-              child: Column(children: <Widget>[
-            Row(children: [
-              const SizedBox(height: 10.0),
+              child: Row(children: <Widget>[
+              const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 20.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -351,7 +367,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Cake Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -359,6 +375,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to cake food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'cake';
@@ -366,7 +383,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -387,7 +404,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Basbousa Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -395,6 +412,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to basbousa food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'basbousa';
@@ -403,8 +421,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 20.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -425,7 +444,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Konafa Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -433,6 +452,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to konafa food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'konafa';
@@ -440,7 +460,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -461,7 +481,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Dumpling Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -469,6 +489,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to dumpling food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'dumpling';
@@ -477,8 +498,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 20.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -500,7 +522,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Rice With Milk Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -508,6 +530,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to rice with milk food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'rice with milk';
@@ -515,7 +538,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -536,7 +559,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Couscous Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -544,6 +567,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to couscous food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'couscous';
@@ -552,8 +576,9 @@ class foodscreen extends StatelessWidget {
                 },
               ),
             ]),
-            const SizedBox(height: 10.0),
-            Row(children: [
+            const SizedBox(width: 10.0),
+            Column(children: [
+              const SizedBox(height: 20.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -574,7 +599,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Jelly Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -582,6 +607,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to jelly food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'jelly';
@@ -589,7 +615,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(width: 10.0),
+              const SizedBox(height: 10.0),
               InkWell(
                 child: Container(
                   height: 180,
@@ -610,7 +636,7 @@ class foodscreen extends StatelessWidget {
                           bottomRight: Radius.circular(40.0),
                           bottomLeft: Radius.circular(40.0)),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Glash Section',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20.0),
@@ -618,6 +644,7 @@ class foodscreen extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
+                  /* function helps to navigate to glash food page */
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => foodkindsweetscreen()));
                   foodkind = 'glash';
@@ -625,7 +652,7 @@ class foodscreen extends StatelessWidget {
                   print("savory");
                 },
               ),
-              const SizedBox(height: 20.0),
+              //const SizedBox(height: 20.0),
             ]),
           ])));
     } else {
